@@ -18,26 +18,26 @@ First start by using an ecryption identifier in this case I have used __Hash-Ide
 - Type __hash-identifier__ to enter encryption indetifier mode.
 + Then type the hash encryption and press __Enter/return__ and the hash will be identified.
 * After the identification press __Control & ESC__  to return  __user mode__
-![image1](images/md5-hash.png)
+![alt image1](images/md5-hash.png)
 __Notice that the user is in Root mode.__ 
 
 ## Next word lists analysis and hacking.
 Here I typed the command __john --list=formats__ to show me all the encryption formats __John The Ripper__ supports and there's an enourmous amount of encryptions.
-![image2](images/johnlist.png)
+![alt image2](images/johnlist.png)
 Then locate __Rockyou__ 
-![images3](images/locate.png)
-![images4](images/locate2.png)
+![alt images3](images/locate.png)
+![alt images4](images/locate2.png)
 In case you don't have __/usr/share/worlists/rockyou.txt.gz__ try the following commands __cd wordlist > cd rockyou > ls > gunzip rockyou.txt__  to unzip __gz file__ then __cd__ back to where you have your encrypted file.
 type __locate Rockyou__ at this point __/usr/share/worlists/rockyou.txt.gz__ should appear.
 Navigate to your browser and search for __MD5__ generator.
 type any random word and click generate and copy either __MD5 Hash or SHA1 Hash__
-![images5](images/md5.png)
+![alt images5](images/md5.png)
 Back to your terminal make sure you are on __root__ user mode.
 create a __.txt__ file manually or use the command __echo "ecryption" > .txt__ to create a file with the encryption on it.
 
 On your __Kali Terminal__ type the command __john --w=/usr/share/wordlists/rockyou.txt --format=raw-md5 .your .txt encrypted file__ this command should decrypt your encrypted message or password.
- ![images6](images/Friday123.png) 
- ![images7](images/encryption.png)
+ ![alt images6](images/Friday123.png) 
+ ![alt images7](images/encryption.png)
 
   __Note: In this demo I used both john and rockyou to sort out a dictionary attack john used the cracking methods and rockyou used it's own dictionary__   
 

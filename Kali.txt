@@ -1,0 +1,12 @@
+locate rockyou 
+hash-indetifier
+john --list=formats
+john -help 
+john --single --format=raw-sha1 md5short.txt
+john /usr/share/wordlists/rockyou.txt.gz md5short.txt
+john /usr/share/wordlists/rockyou.txt  md5short.txt
+ls /usr/share/wordlists/ 
+gunzip rockyou.txt.gz 
+john /usr/share/wordlists/rockyou.txt  md5short.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 encrypted.
+john --w=/usr/share/wordlists/rockyou.txt --format=raw-md5 testmd5.txt

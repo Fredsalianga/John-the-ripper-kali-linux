@@ -36,8 +36,8 @@ Back to your terminal make sure you are on __root__ user mode.
 create a __.txt__ file manually or use the command __echo "ecryption" > .txt__ to create a file with the encryption on it.
 
 On your __Kali Terminal__ type the command __john --w=/usr/share/wordlists/rockyou.txt --format=raw-md5 .your .txt encrypted file__ this command should decrypt your encrypted message or password.
- ![alt images6](images/Friday123.png) 
- ![Alt images7](images/encryption.png)
+ ![alt images6](Images/Friday123.png) 
+ ![Alt images7](Images/encryption.png)
 
   __Note: In this demo I used both john and rockyou to sort out a dictionary attack john used the cracking methods and rockyou used it's own dictionary__   
 

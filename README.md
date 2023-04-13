@@ -18,20 +18,20 @@ First start by using an ecryption identifier in this case I have used __Hash-Ide
 - Type __hash-identifier__ to enter encryption indetifier mode.
 + Then type the hash encryption and press __Enter/return__ and the hash will be identified.
 * After the identification press __Control & ESC__  to return  __user mode__
-![alt image1](images/md5-hash.png)
+![Alt image1](Images/md5-hash.png)
 __Notice that the user is in Root mode.__ 
 
 ## Next word lists analysis and hacking.
 Here I typed the command __john --list=formats__ to show me all the encryption formats __John The Ripper__ supports and there's an enourmous amount of encryptions.
-![alt image2](images/johnlist.png)
+![Alt image2](Images/johnlist.png)
 Then locate __Rockyou__ 
-![alt images3](images/locate.png)
-![alt images4](images/locate2.png)
+![Alt images3](Images/locate.png)
+![Alt images4](Images/locate2.png)
 In case you don't have __/usr/share/worlists/rockyou.txt.gz__ try the following commands __cd wordlist > cd rockyou > ls > gunzip rockyou.txt__  to unzip __gz file__ then __cd__ back to where you have your encrypted file.
 type __locate Rockyou__ at this point __/usr/share/worlists/rockyou.txt.gz__ should appear.
 Navigate to your browser and search for __MD5__ generator.
 type any random word and click generate and copy either __MD5 Hash or SHA1 Hash__
-![alt images5](images/md5.png)
+![Alt images5](Images/md5.png)
 Back to your terminal make sure you are on __root__ user mode.
 create a __.txt__ file manually or use the command __echo "ecryption" > .txt__ to create a file with the encryption on it.
 
